@@ -68,13 +68,14 @@ html {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space -between;
   padding: 0;
 }
 
 @media screen and (min-width: 992px) {
   .tabs-container {
     max-width: 455px;
+    justify-content: center;
   }
 }
 
@@ -91,4 +92,10 @@ html {
   .project-list-container {
     margin-bottom: 150px;
   }
+}
+.tab-item {
+  margin-bottom: 12px;
+}
+.tab-item.active {
+  background-color: #ddd; /* Add a background color for active tab */
 }
